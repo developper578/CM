@@ -30,6 +30,7 @@ public class Item implements Serializable{
         return items;
     }
 
+    // This is the tostring method
     @Override
     public String toString() {
         return getTitle();
