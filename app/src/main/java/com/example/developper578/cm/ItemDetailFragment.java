@@ -14,7 +14,7 @@ public class ItemDetailFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        item = (Item)getArguments().getSerializable("item");
+        item = (Item)getArguments().getSerializable(ItemsListActivity.KEY_EXTRA_ITEM);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class ItemDetailFragment extends Fragment {
     public static ItemDetailFragment newInstance(Item item) {
         ItemDetailFragment fragmentItemDetail = new ItemDetailFragment();
         Bundle args = new Bundle();
-        args.putSerializable(ItemsListActivity.KEY_EXTRA_ITEM, "item");
+        args.putSerializable(ItemsListActivity.KEY_EXTRA_ITEM, item);
         fragmentItemDetail.setArguments(args);
 
         return fragmentItemDetail;
