@@ -1,12 +1,12 @@
 package com.example.developper578.cm;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 
-public class ItemDetailActivity extends FragmentActivity {
+public class ItemDetailActivity extends AppCompatActivity{
     public static String TAG = "ItemDetailActivity";
 
     private ItemDetailFragment fragmentDetail;

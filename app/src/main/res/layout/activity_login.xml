@@ -4,30 +4,86 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingBottom="16dp"
-    android:paddingTop="16dp"
+    android:background="#E43E3E"
     tools:context=".LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
         
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
             android:orientation="vertical">
-            <com.joooonho.SelectableRoundedImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
                 android:layout_gravity="center"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/profile_img"
-                app:sriv_border_color="#FFCC00"
-                app:sriv_border_width="2dp"
-                app:sriv_oval="true" />
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:text="CHALLENGE ME"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="3.5dp"
+                android:textColor="#ffffff"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:shadowColor="#ffffff"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#CE1C1C"
+                android:textColor="#ffffff"
+                android:text="login"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="No account yet ?" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#ffffff"
+                android:onClick="signup"
+                android:text="sign up"
+                android:textColor="#CE1C1C" />
         </LinearLayout>
     </ScrollView>
 
