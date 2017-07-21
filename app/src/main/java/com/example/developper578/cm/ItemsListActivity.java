@@ -29,9 +29,7 @@ public class ItemsListActivity extends FragmentActivity implements ItemsListFrag
 
     private void determinePaneLayout() {
         FrameLayout frameItemDetail = (FrameLayout)findViewById(R.id.flDetailContainer);
-        Log.v(TAG, "is not two pane");
         if(frameItemDetail != null) {
-            Log.v(TAG, "is two pane");
             isTwoPane = true;
             ItemsListFragment fragmentItemsList = (ItemsListFragment) getSupportFragmentManager().findFragmentById(R.id.fragment1);
             fragmentItemsList.setActivateOnItemClick(true);
