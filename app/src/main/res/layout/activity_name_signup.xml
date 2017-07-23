@@ -34,8 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
         android:background="@color/primary"
-        android:textColor="#ffffff"
-        android:text="Sign Up"/>
+        android:onClick="onSignupClick"
+        android:text="Sign Up"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

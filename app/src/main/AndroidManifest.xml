@@ -26,6 +26,12 @@
         <activity android:name=".NameSignupActivity">
         </activity>
 
+        <activity android:name=".BirthdaySingupActivity">
+        </activity>
+
+        <activity android:name=".UsernameSignupActivity">
+        </activity>
+
     </application>
 
 </manifest>
